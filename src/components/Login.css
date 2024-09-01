@@ -1,0 +1,104 @@
+.login-page {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .login-container {
+    flex: 4; /* 4/9 of the width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f6f6;
+    color: #A981EA;
+  }
+  
+  .login-title {
+    text-align: left;
+    width: 100%;
+    color: #A981EA;
+    margin-left: 64px;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .image-container {
+    flex: 5; /* 5/9 of the width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  .login-form {
+    width: calc(100% - 64px);
+    margin-left: 32px;
+    margin-right: 32px;
+    background-color: #f6f6f6;
+    text-align: left;
+    color: #A981EA;
+    font-size: 18px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    height: 72px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 36px;
+  }
+
+  .keep-signed-in {
+    display: flex;
+    margin-bottom: 15px;
+    height: 36px;
+    width: 36px;
+  }
+  
+  .keep-signed-in input {
+    margin-right: 10px;
+    height: 14px;
+  }
+  
+  .keep-signed-in label {
+    font-size: 14px; /* Font size for the checkbox label */
+    color: #A981EA; /* Match the color with the form text */
+    width: 100%; 
+    white-space: nowrap;
+  }
+  
+  .login-button {
+    width: 100%;
+    height: 72px;
+    padding: 12px;
+    background-color: #A981EA;
+    color: white;
+    border: none;
+    border-radius: 36px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .login-button:hover {
+    background-color: #C1D3FF;
+  }
+
+  
