@@ -1,0 +1,245 @@
+.welcome-page {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width:100%;
+  overflow-x: hidden; /* Prevent horizontal scroll on small screens */
+}
+
+.sidebar {
+  background-color: #a981ea;
+  width: 300px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0; /* Prevent shrinking of sidebar */
+}
+
+.sidebar-title {
+  margin-top: 32px;
+  margin-bottom: 110px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 32px;
+}
+
+
+.sidebar-logo {
+  margin-right:4px;
+}
+
+.sidebar-item {
+  background-color: white;
+  color: #a981ea;
+  border: none;
+  height: 64px;
+  width: 90%;
+  margin: 32px 0;
+  border-radius: 32px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.sidebar-icons {
+  margin-top: auto;
+  display: flex;
+  gap: 64px;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+
+/* Header Styling */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  margin-bottom:16px;
+}
+
+.header-title {
+  display: flex;
+  align-items: left;
+  color: black;
+  font-weight: bold;
+  font-size:32px;
+  flex-grow: 1; /* Allow the title to take up remaining space */
+}
+
+
+.login-button-2 {
+  display: flex;
+  align-items: center;
+  justify-content:right;
+  background-color: transparent; /* Set background to transparent */
+  color: #a981ea;
+  font-size: 32px;
+  text-transform: none;
+  font-weight: bold;
+  border: none; /* Remove border */
+  height: 32px;
+  cursor: pointer;
+
+}
+
+.login-icon {
+  margin-right: 4px; 
+}
+
+.content {
+  padding: 32px;
+  flex: 1;
+  overflow-y: auto;
+  margin-left: 0px; /* Maintain distance between sidebar and content */
+  min-width: 0; /* Prevent overflow on small screens */
+}
+
+/* AUTOTEMPLATER Section */
+.autotemplater-box {
+  background-color: #fae7d0;
+  padding: 16px;
+  border-radius: 32px;
+  height: 144px; /* Match height of the import section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+}
+
+.autotemplater-title {
+  color: #a981ea;
+  font-weight: bold;
+  font-size:36px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.autotemplater-description {
+  margin-bottom: 32px;
+  text-align: left;
+  font-size:24px;
+}
+
+.section-row {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.section {
+  flex: 1;
+  min-width: 250px; 
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size:24px;
+  padding:16px;
+}
+
+.import-section {
+  background-color: #f6f6f6;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 192px;
+
+}
+
+.import-button {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.import-button-title {
+  color: #a981ea;
+  font-size:24px;
+  font-weight: bold;
+}
+
+.import-button-caption {
+  color: #a981ea;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+.instruction-demo-box {
+  background-color: #d8e8ff;
+  height: 160px;
+  border-radius: 32px;
+  padding:16px;
+}
+
+.recent-designs-title {
+  font-weight: bold;
+  margin-top:-16px;
+  margin-bottom: -16px;
+  font-size:24px;
+  margin-left:16px;
+  margin-bottom: 16px;
+
+}
+
+.recent-designs-bounding-box {
+  background-color: #f6f6f6;
+  padding: 16px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+.recent-designs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: px;
+  justify-content: center; 
+}
+
+.design-card {
+  width: calc(87%/4);
+  height: 160px;
+  margin: 16px;
+  border-radius: 32px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.design-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.design-card-title {
+  color: #888;
+  text-align: center;
+  margin: 4px 0;
+  font-weight: bold;
+  font-size:16px;
+}
+
+.design-card:first-child { 
+  border: 16px solid #d8e8ff; 
+  box-sizing: border-box; 
+}
+
+.design-card-time {
+  color: #888;
+  text-align: center;
+  font-size: 16px;
+}
